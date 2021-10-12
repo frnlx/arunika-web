@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Arunika</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="shortcut icon" href="assets/icon/favico.svg"/>
+    <script src="js/jquery.3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+</head>
+
+<body>
+    <nav uk-sticky>
+        <nav class="--nic-nav uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left uk-margin-medium-left">
+                <a class="uk-navbar-item uk-logo" href="index.html">
+                    <img class="" width="200" height="100" data-src="assets/img/logo.png" uk-img />
+                </a>
+            </div>
+            <div class="uk-navbar-right uk-margin-medium-right">
+                <div class="uk-navbar-item">
+                    <a href="#login" uk-toggle>LOGIN</a>
+                </div>
+                <div class="uk-navbar-item">
+                    <span>|</span>
+                </div>
+                <div class="uk-navbar-item">
+                    <a href="#register" uk-toggle>SIGN UP</a>
+                </div>
+            </div>
+        </nav>
+        <nav class="--nic-sub-nav --nic-half-opacity uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left uk-margin-medium-left">
+                <div class="uk-navbar-item --nic-sub-nav-item">
+                    <a href="#">About Us</a>
+                </div>
+                <div class="uk-navbar-item --nic-sub-nav-item">
+                    <span>|</span>
+                </div>
+                <div class="uk-navbar-item --nic-sub-nav-item">
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+            <div class="uk-navbar-right uk-margin-medium-right">
+                <div class="uk-navbar-item --nic-sub-nav-item">
+                    <a href="pricing.html">PRICING</a>
+                </div>
+                <div class="uk-navbar-item --nic-sub-nav-item">
+                    <span>|</span>
+                </div>
+                <div class="uk-navbar-item --nic-sub-nav-item">
+                    <a href="gallery.html">OUR GALLERY</a>
+                </div>
+            </div>
+        </nav>
+    </nav>
+    <div>
+        <!-- CONTENT -->
+        <div class="uk-container uk-container-xlarge">
+            <div uk-grid class="uk-margin-medium-top">
+                <div class="uk-width-1-1">
+                    <div class="uk-text-center">
+                        <span class="--nic-order-info --nic-confirmed uk-text-center">ORDER CONFIRMED</span>
+                    </div>
+                </div>
+            </div>
+
+            <div uk-grid class="uk-margin-medium-top">
+                <div class="uk-width-1-1">
+                    <div class="uk-text-center">
+                        <span class="--nic-confirmed-info">Pay to the following bank account:
+                            <p class="uk-text-break uk-margin-medium-bottom">
+                                BANK BCA: <b>123456789</b>
+                                a/n: <b>Arunika Photography</b>
+                                Amount: <b>IDR 1.980.000</b>
+                                Note:<b>“Order No. 789”</b>
+                            </p>
+                            <i>Please process the payment within 1x24 hours to secure your booking</i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <hr class="uk-margin-large-bottom" />
+
+            <div uk-grid class="uk-margin-medium-top uk-margin-large-bottom">
+                <div class="uk-width-1-1">
+                    <div class="uk-text-center --nic-set-flex uk-margin-large-bottom">
+                            <a class="--nic-button --nic-button-primary uk-margin-auto uk-width-1-4" href="index.html">
+                                Homepage
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODALS -->
+        <div id="login" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog --nic-modal --nic-box-shadow uk-modal-body uk-margin-auto-vertical">
+                <div class="uk-container uk-container-small">
+                    <h2 class="uk-modal-title uk-text-center">LOGIN</h2>
+                    <form class="uk-grid-small" uk-grid>
+                        <div class="uk-width-1-1 uk-margin-small-bottom">
+                            <input class="uk-input --nic-input" type="email" placeholder="Email">
+                        </div>
+                        <div class="uk-width-1-1 uk-margin-small-bottom">
+                            <input class="uk-input --nic-input" type="password" placeholder="Password">
+                        </div>
+                        <div class="uk-width-1-1 uk-margin-small-bottom">
+                            <button
+                                class="--nic-button --nic-button-primary uk-width-1-1 uk-margin-small-bottom">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <h5 class="--nic-text-break uk-margin-medium-bottom">Or</h5>
+                <div class="uk-container uk-container-small">
+                    <div class="uk-width-1-1 uk-margin-medium-bottom">
+                        <a
+                            class="--nic-button --nic-button-icon --nic-flex uk-width-1-1 uk-margin-small-bottom uk-text-center uk-text-capitalize">
+                            <img src="assets/icon/25555-middle.png" class="--nic-icon"> Login With Google
+                        </a>
+                    </div>
+                    <div class="uk-width-1-1 uk-margin-medium-bottom">
+                        <a
+                            class="--nic-button --nic-button-icon --nic-flex uk-width-1-1 uk-margin-small-bottom uk-text-center uk-text-capitalize">
+                            <img src="assets/icon/facebook-512.png" class="--nic-icon"> Login With Google
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="register" class="uk-flex-top" uk-modal>
+            <div class="uk-modal-dialog --nic-modal --nic-box-shadow uk-modal-body uk-margin-auto-vertical">
+                <div class="uk-container uk-container-small">
+                    <h2 class="uk-modal-title uk-text-center">REGISTER</h2>
+                    <form class="uk-grid-small" uk-grid>
+                        <div class="uk-width-1-1 uk-margin-small-bottom">
+                            <input class="uk-input --nic-input" type="email" placeholder="Email">
+                        </div>
+                        <div class="uk-width-1-1 uk-margin-small-bottom">
+                            <input class="uk-input --nic-input" type="password" placeholder="Password">
+                        </div>
+                        <div class="uk-width-1-1 uk-margin-small-bottom">
+                            <input class="uk-input --nic-input" type="password" placeholder="Confirm Password">
+                        </div>
+                        <div class="uk-width-1-1 uk-margin-small-bottom">
+                            <button class="--nic-button --nic-button-primary uk-width-1-1 uk-margin-small-bottom">Sign
+                                Up</button>
+                        </div>
+                    </form>
+                </div>
+                <h5 class="--nic-text-break uk-margin-medium-bottom">Or</h5>
+                <div class="uk-container uk-container-small">
+                    <div class="uk-width-1-1 uk-margin-medium-bottom">
+                        <a
+                            class="--nic-button --nic-button-icon --nic-flex uk-width-1-1 uk-margin-small-bottom uk-text-center uk-text-capitalize">
+                            <img src="assets/icon/25555-middle.png" class="--nic-icon"> Register With Google
+                        </a>
+                    </div>
+                    <div class="uk-width-1-1 uk-margin-medium-bottom">
+                        <a
+                            class="--nic-button --nic-button-icon --nic-flex uk-width-1-1 uk-margin-small-bottom uk-text-center uk-text-capitalize">
+                            <img src="assets/icon/facebook-512.png" class="--nic-icon"> Register With Google
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="--nic-footer">
+        <div class="--nic-foot-left uk-margin-medium-left">
+            <div class="--nic-foot-item">
+                <span>Copyright © Arunika Photography</span>
+            </div>
+        </div>
+        <div class="--nic-foot-right uk-margin-medium-right">
+            <div class="--nic-foot-item">
+                <span class="uk-margin-small-right">Contact Us : </span>
+                <ul class="uk-iconnav uk-margin-x-small-left">
+                    <li>
+                        <a class="uk-icon uk-icon-image --nic-icon-50"
+                            style="background-image: url(assets/icon/icons8-instagram-96.svg);"></a>
+                    </li>
+                    <li>
+                        <a class="uk-icon uk-icon-image --nic-icon-50"
+                            style="background-image: url(assets/icon/icons8-region-96.svg);"></a>
+                    </li>
+                    <li>
+                        <a class="uk-icon uk-icon-image --nic-icon-50"
+                            style="background-image: url(assets/icon/icons8-messaging-96.svg);"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
